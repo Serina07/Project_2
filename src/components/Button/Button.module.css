@@ -1,0 +1,18 @@
+.primary_btn {
+    padding: 18px 10px;
+    height: 10px;
+    width: 170px;
+    background-color: #572802;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: transparent;
+    justify-content: center;
+}
+
+.msg_icon {
+    margin: 0;
+    padding: 0;
+}
