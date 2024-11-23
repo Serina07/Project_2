@@ -1,8 +1,13 @@
 .primary_btn {
     padding: 18px 10px;
     height: 10px;
+<<<<<<< HEAD
     width: 180px;
     background-color: #7d0101;
+=======
+    width: 170px;
+    background-color: #572802;
+>>>>>>> e10d247a3673798088de53593f13238f89f56d0a
     color: white;
     border-radius: 5px;
     display: flex;
@@ -10,6 +15,7 @@
     gap: 8px;
     border: transparent;
     justify-content: center;
+<<<<<<< HEAD
 }.outline_btn {
     padding: 18px 10px;
     border: #7d0101 solid ;
@@ -22,6 +28,8 @@
     align-items: center;
     gap: 8px;
     justify-content: center;
+=======
+>>>>>>> e10d247a3673798088de53593f13238f89f56d0a
 }
 
 .msg_icon {

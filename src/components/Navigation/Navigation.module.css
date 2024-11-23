@@ -9,6 +9,7 @@
     justify-content: space-between;
     height: 94px;
     margin: 0 2rem;
+    margin: 0 1rem;
     align-items: center;
     font-size: 14px;
 }
@@ -35,6 +36,7 @@ ul {
     width: 4.5rem;
     border-radius: 5px;
     border: solid 2px #7d0101 ;
+    border: solid 2px #572802 ;
     background-color: transparent;
 }
 
@@ -49,6 +51,8 @@ ul {
     border-radius: 5px;
     border:solid 2px #7d0101 ;
     background-color: #7d0101;
+    border:solid 2px #572802 ;
+    background-color: #572802;
     color: white;
 }
 
