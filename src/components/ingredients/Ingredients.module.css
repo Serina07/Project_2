@@ -1,0 +1,104 @@
+/* Container Styling */
+.i_container {
+  width: 25%;
+  margin: 40px 0;
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #dde2de;
+  font-family: Arial, sans-serif;
+}
+
+/* Title Section Styling */
+.text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: #333;
+  background: #ebe5e5;
+}
+
+.i_list {
+  display: flex;
+  max-width: 50%;
+  margin: 10px;
+}
+
+.k_container {
+  margin: 10px 0;
+}
+
+.k_button {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #7d0101;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.k_button:hover {
+  opacity: 0.9;;
+}
+
+/* Clearfix Utility */
+.clear {
+  clear: both;
+}
+
+/* Left Wrapper */
+.left-wrapper {
+  margin-top: 20px;
+}
+
+/* Tile Wrapper */
+.tile-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Ingredient Tiles */
+/* .tile-wrapper .check-box {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #7d0101;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  box-sizing: border-box;
+} */
+
+/* .tile-wrapper .ingredient-check {
+  margin: 10px 0;
+} */
+
+/* .tile-wrapper .ingredient-checkbox-label {
+  font-size: 1rem;
+  color: #555;
+} */
+
+/* .tile-wrapper .check-box:hover {
+  background-color: #f1f1f1;
+} */
+
+/* Hidden Elements */
+/* .tile-wrapper div[style*="display: none"] {
+  display: none !important;
+} */
+
+@media (max-width: 768px) {
+  .i_list {
+    grid-template-columns: 1fr;
+  }
+}
