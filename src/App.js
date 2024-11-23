@@ -6,6 +6,7 @@ import ContactForm from "./components/ContactForm/ContactForm";
 import ContactHeader from "./components/contactHeader/ContactHeader";
 import Navigation from "./components/Navigation/Navigation";
 import Home from "./components/home/Home";
+import Footer from "./components/footer/Footer";
 import Ingredients from "./components/ingredients/Ingredients";
 import { slides } from "./assets/slideData";
 // import classNames from 'classnames'
@@ -42,6 +43,8 @@ function App() {
 
         {/* <Button /> */}
       </div>
+      <Footer/>
+
     </Router>
   );
 }
