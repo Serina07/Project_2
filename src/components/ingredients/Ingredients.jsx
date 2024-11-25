@@ -130,7 +130,7 @@ function Ingredients() {
                   <div className={styles.List}>
                       
                   </div>
-                  <div className={styles.button_submit} onclick="findRecipes()">
+                  <div className={styles.button_submit} onClick="findRecipes()">
                       <button className={styles.button}>Find Recipes</button>
                   </div>
               </div>

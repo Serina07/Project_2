@@ -25,10 +25,10 @@ function Navigation() {
     </div>
         <div className={style.button}>
             <button className={style.login}>
-                Login
+            <Link className={style.loginPage} to="/login">Login</Link>
             </button>
             <button className={style.signup}>
-                Sign Up
+            <Link className={style.loginPage} to="/register">Sign Up</Link>
             </button>
         </div>
 
