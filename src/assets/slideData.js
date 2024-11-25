@@ -1,9 +1,7 @@
 // import { Home } from "../components/home/Home";
-import img1 from '../assets/images/1.png'
-import img2 from '../assets/images/5.png'
-import img3 from '../assets/images/6.png'
-import img4 from '../assets/images/LasLogo1.png'
-import img5 from '../assets/images/Contact_image.png.png'
+import img1 from '../assets/images/s1.png'
+import img2 from '../assets/images/s2.png'
+import img3 from '../assets/images/s3.png'
 
 
   export const slides = [
@@ -21,15 +19,5 @@ import img5 from '../assets/images/Contact_image.png.png'
       "id": '3',
       "src": img3,
       "alt": "photo3"
-    },
-    {
-      "id": '4',
-      "src": img4,
-      "alt": "photo4"
-    },
-    {
-      "id": '5',
-      "src": img5,
-      "alt": "photo5"
     }
   ]

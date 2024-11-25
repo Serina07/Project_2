@@ -1,5 +1,6 @@
 .footer {
   display: block;
+  justify-content: end;
   position: relative;
   background-color:#7d0101 ;
   height: 100%;
