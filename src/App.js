@@ -10,6 +10,7 @@ import {
   } from "react-router-dom";
 
 import ContactForm from "./components/ContactForm/ContactForm";
+import About from "./components/aboutUs/About";
 import ContactHeader from "./components/contactHeader/ContactHeader";
 import Login from "./components/Register/Login";
 import Register from "./components/Register/Register";
@@ -60,6 +61,14 @@ function App() {
             path="/register" element={
               <>
               <Register/>
+              </>
+            }
+            />
+
+<Route
+            path="/aboutUs" element={
+              <>
+              <About/>
               </>
             }
             />

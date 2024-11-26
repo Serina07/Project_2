@@ -17,7 +17,7 @@ function Navigation() {
         <div className={style.navBar}>
             <ul>
                 <li ><Link className={style.this_page} to="/">Home</Link></li>
-                <li ><Link className={style.this_page} to="/abt">About Us</Link></li>
+                <li ><Link className={style.this_page} to="/aboutUs">About Us</Link></li>
                 <li > <Link className={style.this_page} to="/contactUs">Contact Us</Link></li>
                 </ul>
     </div>
