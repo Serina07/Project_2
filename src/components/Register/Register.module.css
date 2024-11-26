@@ -65,14 +65,14 @@ form button {
   padding: 10px;
   font-size: 1rem;
   color: #fff;
-  background-color: #007bff;
+  background-color: #7d0101;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 form button:hover {
-  background-color: #0056b3;
+  opacity: 0.7;
 }
 
 form p {
