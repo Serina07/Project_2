@@ -11,9 +11,11 @@ const Footer = () => {
           <div className={styles.container5}>
             <div className={styles.row1}>
               <div className={styles.column}>
-                <div className={styles.logoImg}>
+              <Link to="/">
+              <div className={styles.logoImg}>
                   <img src="./images/LasLogo1.png" alt="logo" />
                 </div>
+              </Link>
               </div>
 
               <div className={styles.colum}>
