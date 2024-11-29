@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Ingredients.module.css";
+import { useNavigate } from "react-router-dom";
 
 function Ingredients() {
   const ingredients = [
@@ -30,7 +31,7 @@ function Ingredients() {
   const [isDetecting, setIsDetecting] = useState(false);
   const [detectedRecipe, setDetectedRecipe] = useState(null);
 
-  
+  const navigation = useNavigate();
 
   const handleIngredientSelect = (ingredient) => {
     const isSelected = selectedIngredients.some(
@@ -45,7 +46,6 @@ function Ingredients() {
       setSelectedIngredients([...selectedIngredients, ingredient]);
     }
   };
-
 
   const handleImageUpload = (event) => {
     const file = event.target.files[0];
@@ -67,6 +67,11 @@ function Ingredients() {
       setIsDetecting(false);
       setDetectedRecipe(" ");
     }, 2000);
+  };
+
+  const handleFind = () => {
+    const ingredientNames = selectedIngredients.map((ingredient) => ingredient.name);
+    navigation("/recipe", { state: { ingredients: ingredientNames } });
   };
 
   return (
@@ -108,7 +113,6 @@ function Ingredients() {
           </div>
         </div>
 
-        
         <div className={`col-md-3 ${styles.customColumn} ${styles.second}`}>
           <div className={styles.checked_ingredients}>
             <p className={styles.checked_ingredients_title}>Your Ingredients</p>
@@ -118,7 +122,6 @@ function Ingredients() {
               </div>
             ) : (
               <div className={styles.List}>
-                
                 {selectedIngredients.map((ingredient) => (
                   <div key={ingredient.id} className={styles.list_item}>
                     {ingredient.name}
@@ -130,19 +133,24 @@ function Ingredients() {
               {selectedIngredients.length > 0 && (
                 <>
                   <h4>Selected Ingredient Names:</h4>
-                  <div style={{flexDirection:"column"}}>
-                    {selectedIngredients
-                      .map((ingredient) => 
-                        <p>{ingredient.name}</p>
-                     )
-                      }
-                 </div>
+                  <div style={{ flexDirection: "column" }}>
+                    {selectedIngredients.map((ingredient) => (
+                      <p key={ingredient.id}>{ingredient.name}</p>
+                    ))}
+                  </div>
                 </>
               )}
             </div>
             <div className={styles.button_submit}>
-              <button className={styles.button}>Find Recipes</button>
-              <button onClick={() => setSelectedIngredients([])} className={styles.button}>Clear All</button>
+              <button onClick={handleFind} className={styles.button}>
+                Find Recipes
+              </button>
+              <button
+                onClick={() => setSelectedIngredients([])}
+                className={styles.button}
+              >
+                Clear All
+              </button>
             </div>
           </div>
         </div>

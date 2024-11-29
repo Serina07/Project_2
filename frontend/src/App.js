@@ -11,6 +11,7 @@ import {
 
 import ContactForm from "./components/ContactForm/ContactForm";
 import About from "./components/aboutUs/About";
+import Recipe from "./components/recipe/Recipe";
 import ContactHeader from "./components/contactHeader/ContactHeader";
 import Login from "./components/Register/Login";
 import Register from "./components/Register/Register";
@@ -20,6 +21,7 @@ import Footer from "./components/footer/Footer";
 import Ingredients from "./components/ingredients/Ingredients";
 import { slides } from "./assets/slideData";
 // import classNames from 'classnames'
+
 
 function App() {
 
@@ -69,6 +71,13 @@ function App() {
             path="/aboutUs" element={
               <>
               <About/>
+              </>
+            }
+            />
+            <Route
+            path="/recipe" element={
+              <>
+              <Recipe/>
               </>
             }
             />

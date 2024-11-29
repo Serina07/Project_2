@@ -1,0 +1,65 @@
+/* Recipe container styling */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Error and loading messages styling */
+.error {
+  color: red;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Recipe grid styling for layout */
+.recipeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Dynamic columns */
+  gap: 20px; /* Space between each recipe box */
+  padding: 20px 0;
+}
+
+/* Individual recipe box styling */
+.recipeItem {
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.recipeTitle {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Image styling */
+.imageWrapper {
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.recipeImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Ingredient list styling */
+p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Optional: Styling for recipe description text */
+.recipeItem p {
+  margin-top: 10px;
+  color: #666;
+  font-size: 0.95rem;
+}
